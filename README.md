@@ -18,7 +18,7 @@
 신입 부원 모집 정보, 지난 활동 갤러리, 동아리 소개 등의 기능을 제공합니다.
 
 - **Period:** 2026.01.23 ~ 2026.02.13 (약 3주)
-- **Deploy:** [배포된 사이트 링크 (예: https://yeon-gem.vercel.app)](https://google.com)
+- **Deploy:** [배포된 사이트 링크 (예: https://yongame.vercel.app)](https://google.com)
 
 <br/>
 
