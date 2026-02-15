@@ -1,0 +1,11 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/yongame_web_proj/',
+  server: {
+    port: 3000,
+    open: true,
+  },
+});
