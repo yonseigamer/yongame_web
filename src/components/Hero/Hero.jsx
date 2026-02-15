@@ -1,8 +1,36 @@
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { scrollToSection } from '../../utils/smoothScroll';
 import styles from './Hero.module.css';
 
 function Hero() {
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    let timer = null;
+    let hasScrolled = false;
+
+    const startTimer = () => {
+      timer = setTimeout(() => {
+        if (!hasScrolled) setShowScroll(true);
+      }, 10000);
+    };
+
+    const handleScroll = () => {
+      hasScrolled = true;
+      setShowScroll(false);
+      if (timer) clearTimeout(timer);
+    };
+
+    startTimer();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      if (timer) clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section className={styles.hero} id="hero" aria-label="메인 배너">
       {/* Background overlay */}
@@ -49,18 +77,23 @@ function Hero() {
           지금 지원하기
         </motion.button>
 
-        {/* Scroll indicator */}
-        <motion.div
-          className={styles.scrollIndicator}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
-        >
-          <div className={styles.scrollMouse}>
-            <div className={styles.scrollWheel} />
-          </div>
-          <span className={styles.scrollText}>SCROLL</span>
-        </motion.div>
+        {/* Scroll indicator: appears after 10s idle, hides on scroll */}
+        <AnimatePresence>
+          {showScroll && (
+            <motion.div
+              className={styles.scrollIndicator}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className={styles.scrollMouse}>
+                <div className={styles.scrollWheel} />
+              </div>
+              <span className={styles.scrollText}>SCROLL</span>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );
