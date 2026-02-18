@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { ABOUT_SECTIONS } from '../../utils/constants';
 import styles from './AboutUs.module.css';
 
+const BASE = import.meta.env.BASE_URL;
+
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (delay = 0) => ({
@@ -133,7 +135,7 @@ function AboutUs() {
                           {act.image && (
                             <div className={styles.activityImageWrap}>
                               <img
-                                src={act.image}
+                                src={`${BASE}${act.image}`}
                                 alt={act.title}
                                 className={styles.activityImage}
                                 loading="lazy"

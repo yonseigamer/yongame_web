@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { scrollToSection } from '../../utils/smoothScroll';
 import styles from './Hero.module.css';
 
+const heroBackground = `${import.meta.env.BASE_URL}images/hero/hero-1.webp`;
+
 function Hero() {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -32,7 +34,12 @@ function Hero() {
   }, []);
 
   return (
-    <section className={styles.hero} id="hero" aria-label="메인 배너">
+    <section
+      className={styles.hero}
+      id="hero"
+      aria-label="메인 배너"
+      style={{ backgroundImage: `url(${heroBackground})` }}
+    >
       {/* Background overlay */}
       <div className={styles.overlay} />
 

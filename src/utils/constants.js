@@ -39,19 +39,19 @@ export const ABOUT_SECTIONS = [
         title: '카드뉴스',
         description:
           '누가 연겜의 활동을 묻거든 고개를 들어 카드뉴스를 보게 하라. 홍보국은 매주 연겜에서 진행되는 활동을 카드뉴스로 제작하고 있습니다. 연겜의 얼굴을 빛내주세요!',
-        image: '/images/pr/pr-1.png',
+        image: 'images/pr/pr-1.webp',
       },
       {
         title: '연겜 매거진',
         description:
           '평소 하고 싶었던 게임 이야기를 공유해보자! 게임과 관련된 주제를 선정하여 자유로운 형식으로 제작하는 매거진 활동을 진행하고 있습니다. 본인의 스타일이 담긴 매거진을 만들어 디자인 실력과 게임 지식 모두 뽐내보도록 합시다!',
-        image: '/images/pr/pr-2.png',
+        image: 'images/pr/pr-2.webp',
       },
       {
         title: '포토샵 스터디',
         description:
           '포토샵을 처음 하신다고요? 그런 당신을 위해 준비했습니다! 매주 진행하는 포토샵 스터디를 통해 기본적인 기능을 배우고 나만의 디자인을 만들어보세요!',
-        image: '/images/pr/pr-3.png',
+        image: 'images/pr/pr-3.webp',
       },
     ],
   },
@@ -67,13 +67,13 @@ export const ABOUT_SECTIONS = [
         title: '프리미어 프로 스터디',
         description:
           '영상 편집, 기초부터 실전 꿀팁까지 제대로 배우고 싶다면? 프리미어 프로 스터디에서 툴 마스터는 물론, 서로의 피드백을 통해 퀄리티 높은 나만의 포트폴리오를 완성해 보세요!',
-        image: '/images/media/media-1.png',
+        image: 'images/media/media-1.webp',
       },
       {
         title: '연겜소',
         description:
           '총 상금과 자존심을 건 쇼츠 조회수 대결! 팀원들과 함께 최신 게임 영상을 제작해 푸짐한 상품을 쟁취하세요. 1분 미만의 짧은 승부, 여러분의 기획력과 편집 센스를 보여줄 때입니다.',
-        image: '/images/media/media-2.png',
+        image: 'images/media/media-2.webp',
       },
     ],
   },

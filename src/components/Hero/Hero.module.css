@@ -7,10 +7,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background:
-    url('/images/hero/hero-1.jpg')
-    center / cover no-repeat,
-    var(--color-brand-secondary);
+  background: var(--color-brand-secondary) center / cover no-repeat;
 }
 
 .overlay {
