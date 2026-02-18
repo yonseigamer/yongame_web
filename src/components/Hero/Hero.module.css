@@ -8,7 +8,7 @@
   justify-content: center;
   overflow: hidden;
   background:
-    url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&q=80')
+    url('/images/hero/hero-1.jpg')
     center / cover no-repeat,
     var(--color-brand-secondary);
 }
