@@ -9,10 +9,11 @@ function ActivityCard({ activity }) {
   return (
     <motion.article
       className={`${styles.card} ${hasImage ? styles.cardWithImage : ''}`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.15 }}
+      layout
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.35 }}
     >
       {hasImage ? (
         <img
