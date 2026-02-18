@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NAV_LINKS } from '../../utils/constants';
 import { scrollToSection } from '../../utils/smoothScroll';
+import eagleWhite from '../../assets/images/eagle_white.png';
 import styles from './Header.module.css';
 
 function Header() {
@@ -28,6 +29,7 @@ function Header() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="홈으로 이동"
         >
+          <img src={eagleWhite} alt="YONGAME" className={styles.logoIcon} />
           YONGAME
         </button>
 

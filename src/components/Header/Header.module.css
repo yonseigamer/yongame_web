@@ -28,6 +28,9 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
   font-family: var(--font-display);
   font-size: var(--text-2xl);
   color: var(--color-neutral-100);
@@ -41,6 +44,13 @@
 
 .logo:hover {
   opacity: 0.85;
+}
+
+.logoIcon {
+  height: 1em;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .nav {
