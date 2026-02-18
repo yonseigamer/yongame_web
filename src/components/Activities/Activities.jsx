@@ -63,11 +63,11 @@ function Activities() {
         </motion.div>
 
         {/* Card grid */}
-        <motion.div className={styles.grid} layout>
-          <AnimatePresence mode="popLayout">
+        <div className={styles.grid}>
+          <AnimatePresence mode="wait" initial={false}>
             {filteredActivities.length > 0 ? (
-              filteredActivities.map((activity) => (
-                <ActivityCard key={activity.id} activity={activity} />
+              filteredActivities.map((activity, index) => (
+                <ActivityCard key={activity.id} activity={activity} index={index} />
               ))
             ) : (
               <motion.div
@@ -90,7 +90,7 @@ function Activities() {
               </motion.div>
             )}
           </AnimatePresence>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

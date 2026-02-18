@@ -3,17 +3,16 @@ import styles from './ActivityCard.module.css';
 
 const BASE = import.meta.env.BASE_URL;
 
-function ActivityCard({ activity }) {
+function ActivityCard({ activity, index = 0 }) {
   const hasImage = !!activity.image;
 
   return (
     <motion.article
       className={`${styles.card} ${hasImage ? styles.cardWithImage : ''}`}
-      layout
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.35 }}
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 0 }}
+      transition={{ duration: 0.4, delay: index * 0.05, ease: 'easeOut' }}
     >
       {hasImage ? (
         <img
