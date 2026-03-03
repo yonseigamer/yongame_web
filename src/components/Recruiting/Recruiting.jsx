@@ -68,7 +68,7 @@ function Recruiting() {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <div className={styles.recruitInfo}>
-                <h3 className={styles.scheduleTitle}>💙💙💙 15기 모집 일정 💙💙💙</h3>
+                <h3 className={styles.scheduleTitle}>💙💙💙 15.5기 모집 일정 💙💙💙</h3>
                 <ul className={styles.scheduleList}>
                   {RECRUITMENT.schedule.map((item, i) => (
                     <li key={i} className={styles.scheduleItem}>
