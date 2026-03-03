@@ -255,16 +255,16 @@ export const NAV_LINKS = [
 
 // ===== Recruitment Config =====
 export const RECRUITMENT = {
-  startDate: '2026-02-14',
-  endDate: '2026-02-26',
-  formUrl: 'https://tally.so/r/0QOypZ',
+  startDate: '2026-03-03',
+  endDate: '2026-03-16',
+  formUrl: 'https://tally.so/r/J92xOd',
   instagramHandle: '@yonsei_yongame',
   instagramUrl: 'https://www.instagram.com/yonsei_yongame/',
   schedule: [
-    { icon: '📢', label: '지원서 마감', date: '2026년 2월 26일(목) 23시 59분' },
-    { icon: '📢', label: '(대면) 면접 기간', date: '2026년 2월 28일(토) ~ 3월 1일(일)' },
-    { icon: '📢', label: '합격자 발표', date: '2026년 3월 2일(월)' },
-    { icon: '📢', label: '첫 정규활동', date: '2026년 3월 4일(수) 18시 30분' },
+    { icon: '📢', label: '지원서 마감', date: '2026년 3월 10일(화) 23시 59분' },
+    { icon: '📢', label: '(대면) 면접 기간', date: '2026년 3월 14일(토) ~ 2026년 3월 15일(일)' },
+    { icon: '📢', label: '합격자 발표', date: '2026년 3월 16일(월)' },
+    { icon: '📢', label: '첫 정규활동', date: '2026년 3월 18일(수) 18시 30분' },
     { icon: '📢', label: 'MT', date: '2026년 3월 21일(토) ~ 3월 22일(일)' },
   ],
   eligibility: [
@@ -291,7 +291,7 @@ export const CLUB_INFO = {
   fullName: '연세대학교 게임 문화 동아리 연겜',
   email: 'yonseigamer@gmail.com',
   phone: '010-7939-5286(회장 류재아)',
-  address: '연세대학교 신촌캠퍼스 학생회관 지하 1층',
+  address: '연세대학교 신촌캠퍼스 학생회관 지하 1층 B11-3',
   instagramUrl: 'https://www.instagram.com/yonsei_yongame/',
   instagramHandle: '@yonsei_yongame',
   youtubeUrl: 'https://www.youtube.com/@yonsei_yongame',
